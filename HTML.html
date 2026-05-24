@@ -2,10 +2,14 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>GestãoPro</title>
+  <title>TBKS - Gestão de Negócios</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="CSS.css">
   <link rel="stylesheet" href="Whatsapp/Whatsapp.css">
+  
+  <link rel="icon" type="image/png" href="Imagens/Logo_ABA.png">
+
 </head>
 <body>
   <button class="button2" id="whatsappBtn">
@@ -18,8 +22,12 @@
   <script src="Whatsapp/Whatsapp.js"></script>
 
   <header>
-    <h1>TBKS Gestão de negócios</h1>
-    <nav>
+    <a href="#home" class="logo-link"></a>
+      <img src="Imagens/Logo_2.jpeg" alt="Logo TBKS" class="header-logo">
+    </a>
+    
+    <h1>Gestão de negócios</h1>
+    <nav class="navbar">
       <a href="#home">Início</a>
       <a href="#services">Serviços</a>
       <a href="#about">Sobre</a>
@@ -28,9 +36,10 @@
   </header>
 
   <section class="hero" id="home">
+    <img src="Imagens/Logo.jpeg" alt="Logo TBKS" class="hero-logo">
+    
     <h2>Soluções inteligentes para o seu negócio</h2>
     <p>Otimize processos, aumente resultados e tenha controle total da sua empresa.</p>
-    <button>Saiba mais</button>
   </section>
 
   <section id="services">
@@ -63,22 +72,23 @@
     </div>
   </section>
 
-  <section id="contact">
+<section id="contact">
     <div class="contact">
-      <h2>Contato</h2>
-      <form id="formEmail">
-        <input type="text" placeholder="Seu nome">
-        <input type="email" placeholder="Seu email">
-        <textarea rows="5" placeholder="Sua mensagem"></textarea>
-        <br>
-        <button type="submit">Enviar</button>
-      </form>
-
-      <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-      <script src="Contato/Contato.js"></script>
-
+        <h2>Contato</h2>
+        <form id="formEmail">
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name"/>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email"/>
+            <label for="message">Mensagem</label>
+            <textarea rows="5" name="message"></textarea>
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+        <script src="Contato/Contato.js"></script>
     </div>
-  </section>
+</section>
 
   <footer>
     <p>© 2026 GestãoPro - Todos os direitos reservados</p>
