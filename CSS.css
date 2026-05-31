@@ -7,44 +7,72 @@
 
     body {
       background-color: #ffffff;
-      color: #333;
+      color: #000000;
       line-height: 1.6;
     }
-
-    header {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;        
-      gap: 20px;                 
-      padding: 15px 60px;
-      box-sizing: border-box;         
-    }
-
+    
     nav {
       margin-left: auto; 
       display: flex;
     }
     
     nav a {
-      margin-left: 20px;
+      background: #000000;
+      padding: 10px 20px;
+      border-radius: 24px;
+      font-size: 16px;
+      margin-left: 24px;
       text-decoration: none;
-      color: #555;
+      color: #ffffff;
       transition: 0.3s;
     }
 
     nav a:hover {
-      color: #000000;
+      color: #b6b6b6;
+    }
+    
+    .anime-header {
+      background-color: #ffffff;
+      padding: 1000 10%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;                 
+      padding: 1px 24px;
+      box-sizing: border-box;
+      top: 0;
+      left: 0;
+      width: 100%;
+      border: 2px solid #000000;
+      position: fixed;       
+      z-index: 10000;
+      transition: transform 0.4s ease;
     }
 
+    .anime-header.oculto {
+      transform: translateY(-100%);
+    }
+
+    .anime-header.oculto:hover {
+      transform: translateY(0);
+      background: rgba(15, 15, 20, 1);
+    }
+
+    .text-logo{
+      border: 2px solid #000000;
+      padding: 8px 20px;
+      font-family: 'Montserrat', sans-serif;
+      color: #000000;
+      border-radius: 25px;
+      
+    }
     .header-logo {
-      height: 45px; 
+      height: 70px; 
       width: auto;  
       display: block;
-      margin-right: 15px
     }
 
     .hero {
-      padding: 80px 20px;
+      padding: 100px 20px;
       min-height: 80vh; 
       text-align: center;
       background: linear-gradient(120deg, #000000, #000000);
@@ -62,21 +90,21 @@
     }
 
     .hero button {
-      padding: 12px 25px;
+      padding: 12px 24px;
       border: none;
       background: white;
       color: #000000;
-      border-radius: 25px;
+      border-radius: 24px;
       cursor: pointer;
       font-weight: bold;
       transition: 0.3s;
     }
 
     .hero-logo {
-      max-width: 280px;
+      max-width: 300px;
       width: 100%; 
       height: auto; 
-      margin-bottom: 40px; 
+      margin-bottom: 40px;
     }
     
     .hero button:hover {
@@ -110,10 +138,66 @@
       color: #000000;
     }
 
+    .destaque {
+      color: #000000;
+      font-weight: bold;
+    }
+
     .about {
-      text-align: center;
       max-width: 700px;
       margin: auto;
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .about p {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #000000;
+      text-align: center;
+    }
+
+    .about h2 {
+      line-height: 1.8;
+      color: #000000;
+      text-align: center;
+    }
+    .about img{
+      width: 100%;
+      height: auto;
+      margin-top: 30px;
+      border-radius: 12px;
+    }
+
+    .executive {
+      max-width: 700px;
+      margin: auto;
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    
+    .executive p {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #000000;
+      text-align: justify;
+    }
+
+    .executive h2 {
+      line-height: 1.8;
+      color: #000000;
+      text-align: center;
+    }
+
+    .executive img{
+      width: 100%;
+      height: auto;
+      margin-top: 30px;
+      border-radius: 12px;
     }
 
     #contact {
@@ -175,7 +259,7 @@
     .pensador-card {
         display: flex;
         align-items: center;
-        gap: 25px;
+        gap: 24px;
 
         background: #111;
         color: white;
@@ -205,7 +289,7 @@
 
         object-fit: cover;
 
-        border: 4px solid #c9a227;
+        border: 4px solid #ffffff;
 
         flex-shrink: 0;
 
@@ -225,7 +309,7 @@
 
         font-size: 32px;
 
-        color: #c9a227;
+        color: #ffffff;
     }
 
     .pensador-info p {
